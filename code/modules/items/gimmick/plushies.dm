@@ -217,6 +217,7 @@ TYPEINFO(/obj/submachine/claw_machine)
 /obj/item/toy/plush/small
 	name = "small plush toy"
 	desc = "You found a new friend!"
+	inhand_image_icon = 'icons/mob/inhand/hand_plushies.dmi'
 	w_class = W_CLASS_NORMAL
 	throw_speed = 3
 	throw_range = 5
