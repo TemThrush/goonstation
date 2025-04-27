@@ -180,7 +180,9 @@ TYPEINFO(/obj/submachine/claw_machine)
 	name = "plush toy"
 	icon = 'icons/obj/plushies.dmi'
 	icon_state = "bear"
+
 	desc = "A cute and cuddly plush toy!"
+	inhand_image_icon = 'icons/mob/inhand/hand_plushie.dmi'
 	throwforce = 3
 	w_class = W_CLASS_BULKY
 	throw_speed = 2
@@ -217,7 +219,7 @@ TYPEINFO(/obj/submachine/claw_machine)
 /obj/item/toy/plush/small
 	name = "small plush toy"
 	desc = "You found a new friend!"
-	inhand_image_icon = 'icons/mob/inhand/hand_plushies.dmi'
+	inhand_image_icon = 'icons/mob/inhand/hand_plushie.dmi'
 	w_class = W_CLASS_NORMAL
 	throw_speed = 3
 	throw_range = 5
