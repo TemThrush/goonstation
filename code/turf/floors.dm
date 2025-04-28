@@ -2870,6 +2870,7 @@ TYPEINFO(/turf/simulated/floor/auto/glassblock)
 	desc = "The floor is coated in web and string."
 	icon = 'icons/turf/web.dmi'
 	icon_state = "web1"
+	pryable = FALSE
 	edge_priority_level = FLOOR_AUTO_EDGE_PRIORITY_GRASS + 1
 	icon_state_edge = "web_edge"
 	step_material = "step_outdoors"
