@@ -962,6 +962,19 @@ TYPEINFO_NEW(/turf/unsimulated/wall/auto/adventure/overgrown2)
 	mod = "cave-"
 	icon_state = "cave-0"
 
+TYPEINFO(/turf/unsimulated/wall/auto/adventure/web)
+TYPEINFO_NEW(/turf/unsimulated/wall/auto/adventure/web)
+	. = ..()
+	connect_overlay = 0
+/turf/unsimulated/wall/auto/adventure/web
+	name = "webbing wall"
+	desc = "A wall of tightly wound spider silk."
+	icon = 'icons/turf/walls/Spidersilkwall.dmi'
+	mod = "Spidersilk-"
+	icon_state = "Spidersilk-0"
+	plane = PLANE_NOSHADOW_BELOW
+
+
 TYPEINFO(/turf/unsimulated/wall/auto/adventure/shuttle)
 TYPEINFO_NEW(/turf/unsimulated/wall/auto/adventure/shuttle)
 	. = ..()
