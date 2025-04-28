@@ -1715,12 +1715,38 @@ var/list/blood_decal_violent_icon_states = list("floor1", "floor2", "floor3", "f
 							elecflash(src)
 			sleep(0.1 SECONDS)
 
+/obj/decal/cleanable/web_barricade
+	name = "torn webbing"
+	desc = "Torn up spider silk strewn across the floor."
+	icon = 'icons/obj/spiderwebs.dmi'
+	icon_state = "web_barricade-broken"
+
+/obj/decal/cleanable/web_block
+	name = "torn webbing"
+	desc = "Torn up spider silk strewn across the floor."
+	icon = 'icons/obj/spiderwebs.dmi'
+	icon_state = "web_block-broken"
+
+/obj/decal/cleanable/web_fence
+	name = "torn webbing"
+	desc = "Torn up spider silk strewn across the floor."
+	icon = 'icons/obj/spiderwebs.dmi'
+	icon_state = "web_fence-broken"
+
+/obj/decal/cleanable/web_sack
+	name = "egg sack"
+	desc = "A large ball of webbing likely containing spider eggs."
+	icon = 'icons/obj/spiderwebs.dmi'
+	icon_state = "websack1"
+	random_icon_states = list("websack1", "websack2")
+
 /obj/decal/cleanable/sec_tape
 	name = "ripped up tape"
 	desc = "Some ripped up security tape."
 	icon = 'icons/obj/decals/cleanables.dmi'
 	icon_state = "sec_tape_1"
 	random_icon_states = list("sec_tape_1", "sec_tape_2")
+
 
 /obj/decal/cleanable/desk_clutter //RIP desk clutter object you're a decal now
 	name = "desk clutter"
