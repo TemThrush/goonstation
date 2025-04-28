@@ -2865,6 +2865,20 @@ TYPEINFO(/turf/simulated/floor/auto/glassblock)
 	mat_appearances_to_ignore = list("steel","synthrubber","glass")
 	connect_diagonal = 1
 
+/turf/simulated/floor/auto/web
+	name = "web"
+	desc = "The floor is coated in web and string."
+	icon = 'icons/turf/web.dmi'
+	icon_state = "web1"
+	edge_priority_level = FLOOR_AUTO_EDGE_PRIORITY_GRASS + 1
+	icon_state_edge = "web_edge"
+	step_material = "step_outdoors"
+	step_priority = STEP_PRIORITY_MED
+
+	New()
+		. = ..()
+		if(src.type == /turf/simulated/floor/auto/web && prob(10))
+			src.icon_state = "web[rand(1,2)]"
 //dont use please
 /turf/simulated/floor/auto/glassblock
 	name = "glass block tiling"
