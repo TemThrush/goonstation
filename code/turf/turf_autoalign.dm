@@ -962,18 +962,6 @@ TYPEINFO_NEW(/turf/unsimulated/wall/auto/adventure/overgrown2)
 	mod = "cave-"
 	icon_state = "cave-0"
 
-TYPEINFO(/turf/unsimulated/wall/auto/adventure/web)
-TYPEINFO_NEW(/turf/unsimulated/wall/auto/adventure/web)
-	. = ..()
-	connect_overlay = 0
-/turf/unsimulated/wall/auto/adventure/web
-	name = "webbing wall"
-	desc = "A wall of tightly wound spider silk."
-	icon = 'icons/turf/walls/Spidersilkwall.dmi'
-	mod = "Spidersilk-"
-	icon_state = "Spidersilk-0"
-	plane = PLANE_NOSHADOW_BELOW
-
 
 TYPEINFO(/turf/unsimulated/wall/auto/adventure/shuttle)
 TYPEINFO_NEW(/turf/unsimulated/wall/auto/adventure/shuttle)
@@ -1214,6 +1202,20 @@ TYPEINFO_NEW(/turf/unsimulated/wall/auto/hedge)
 	mod = "hedge-"
 	light_mod = "wall-"
 	flags = FLUID_DENSE | IS_PERSPECTIVE_FLUID
+
+
+TYPEINFO(/turf/unsimulated/wall/auto/web)
+TYPEINFO_NEW(/turf/unsimulated/wall/auto/web)
+	. = ..()
+	connect_overlay = 1
+/turf/unsimulated/wall/auto/web
+	name = "webbing wall"
+	desc = "A wall of tightly wound spider silk."
+	icon = 'icons/turf/walls/Spidersilkwall.dmi'
+	mod = "Spidersilk-"
+	light_mod = "wall-"
+	icon_state = "Spidersilk-0"
+	plane = PLANE_NOSHADOW_BELOW
 
 TYPEINFO(/turf/unsimulated/wall/auto/adventure/fake_window)
 	connect_diagonal = TRUE
