@@ -1207,7 +1207,8 @@ TYPEINFO_NEW(/turf/unsimulated/wall/auto/hedge)
 TYPEINFO(/turf/unsimulated/wall/auto/web)
 TYPEINFO_NEW(/turf/unsimulated/wall/auto/web)
 	. = ..()
-	connect_overlay = 1
+	connect_diagonal = 1
+	connects_to = typecacheof(list(/turf/unsimulated/wall/auto/hedge, /obj/machinery/door, /obj/window, /turf/unsimulated/wall/, /turf/simulated/wall/false_wall/))
 /turf/unsimulated/wall/auto/web
 	name = "webbing wall"
 	desc = "A wall of tightly wound spider silk."
